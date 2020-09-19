@@ -1,0 +1,35 @@
+package minutesConversionToYearDays;
+
+import java.util.Scanner;
+
+public class MinutesConversionToYearDays {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		// Enter numbers of minutes
+		System.out.println(" Input the number of Minutes: ");
+		
+		int minutes = input.nextInt();
+		
+		
+		// minutes converted into no of year
+		int years = minutes / (60 * 24 * 365 );
+		
+		int remainMinutes = minutes % (60 * 24 * 365);
+	
+		//Minutes into no of years
+		int days = remainMinutes / (60 * 24);
+	
+		//print the no of years and days from minutes
+		System.out.println(+minutes+ " minutes is approximately " +years+" years "+days+" days ");
+
+	}
+
+}
+
+output is :
+ Input the number of Minutes: 
+3456789
+3456789 minutes is approximately 6 years 210 days 
